@@ -16,6 +16,7 @@
 ![Light Mode](https://img.shields.io/badge/Light--Mode-Available-fff7ed?style=for-the-badge&logo=sun&logoColor=ff9800)
 [![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c092decb-f8a3-4dbe-a311-00972478a98b/deploy-status)](https://nft-preview-card-component-fm-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
 
@@ -89,7 +90,7 @@ The project mimics a static design challenge and is fully responsive across mobi
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](LINK)
+Or you can check out the 👉 [live website here](https://nft-preview-card-component-fm-jiro.netlify.app/)
 
 ---
 
@@ -106,10 +107,3 @@ Created by **Elmar Chavez**
 🗓️ Month/Year: **June 2025**
 
 📚 Journey: **3<sup>rd</sup>** month of learning _frontend web development_.
-
-<!--
-
-FRONTEND MENTOR TAGS:
-html css vscode git github netlify 3rd-month frontend-mentor project perfectpixel lighthouse
-
--->
