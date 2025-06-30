@@ -1,0 +1,374 @@
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* || FONTS */
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/outfit-v14-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/outfit-v14-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/outfit-v14-latin-600.woff2") format("woff2");
+}
+
+/* || VARIABLES */
+/* CHANGE THE DATA BELOW AS NEEDED */
+:root {
+  /* FONTS */
+  --FF: "Outfit", sans-serif;
+  --FS: 1rem;
+
+  /* COLORS */
+  --BGCOLOR: hsl(217, 54%, 11%);
+  --BGCOLOR-CARD: hsl(216, 50%, 16%);
+  --BGCOLOR-CARD-WRAPPER-AFTER: hsla(178, 100%, 50%, 0.3);
+  --FONT-COLOR: #fff;
+  --FONT-COLOR-CARD-TITLE-HOVER: hsl(178, 100%, 50%);
+  --FONT-COLOR-CARD-P: hsl(215, 51%, 70%);
+  --FONT-COLOR-CARD-PRICE: hsl(178, 100%, 50%);
+  --FONT-COLOR-CARD-DAYS: hsl(215, 51%, 70%);
+  --FONT-COLOR-CARD-AUTHOR: hsl(215, 51%, 70%);
+  --FONT-COLOR-CARD-SPAN: #fff;
+  --FONT-COLOR-CARD-SPAN-HOVER: hsl(178, 100%, 50%);
+  --BORDER-COLOR-CARD-FOOTER: hsl(215, 32%, 27%);
+  --BORDER-COLOR-CARD-AVATAR: #fff;
+  --SHADOW-COLOR-CARD: #0c1729;
+  --SHADOW-COLOR-CARD-ALT: #0c192c;
+
+  /* BORDERS */
+  --BORDER-CARD-FOOTER: 1px solid var(--BORDER-COLOR-CARD-FOOTER);
+  --BORDER-CARD-AVATAR: 1.5px solid var(--BORDER-COLOR-CARD-AVATAR);
+
+  /* SHADOWS */
+  --BOX-SHADOW-CARD: 15px 40px 0 var(--SHADOW-COLOR-CARD),
+    -15px 40px 0 var(--SHADOW-COLOR-CARD),
+    50px 80px 0 var(--SHADOW-COLOR-CARD-ALT),
+    -50px 80px 0 var(--SHADOW-COLOR-CARD-ALT),
+    50px -25px 0 var(--SHADOW-COLOR-CARD-ALT),
+    -50px -25px 0 var(--SHADOW-COLOR-CARD-ALT);
+}
+
+/* || MEDIA QUERY (LIGHT THEME) */
+/* CHANGE THE DATA BELOW AS NEEDED */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* BACKGROUND */
+    --BGCOLOR: hsl(210, 60%, 98%);
+    --BGCOLOR-CARD: hsl(0, 0%, 100%);
+    --BGCOLOR-CARD-WRAPPER-AFTER: hsla(178, 100%, 50%, 0.1);
+
+    /* TEXT COLORS */
+    --FONT-COLOR: hsl(215, 15%, 20%);
+    --FONT-COLOR-CARD-TITLE-HOVER: hsl(178, 100%, 35%);
+    --FONT-COLOR-CARD-P: hsl(215, 20%, 45%);
+    --FONT-COLOR-CARD-PRICE: hsl(178, 100%, 30%);
+    --FONT-COLOR-CARD-DAYS: hsl(215, 20%, 45%);
+    --FONT-COLOR-CARD-AUTHOR: hsl(215, 20%, 45%);
+    --FONT-COLOR-CARD-SPAN: hsl(215, 15%, 20%);
+    --FONT-COLOR-CARD-SPAN-HOVER: hsl(178, 100%, 35%);
+
+    /* BORDERS */
+    --BORDER-COLOR-CARD-FOOTER: hsl(215, 32%, 85%);
+    --BORDER-COLOR-CARD-AVATAR: hsl(215, 15%, 80%);
+
+    /* SHADOWS */
+    --SHADOW-COLOR-CARD: hsla(215, 30%, 65%, 0.3);
+    --SHADOW-COLOR-CARD-ALT: transparent;
+
+    /* SHADOWS */
+    --BOX-SHADOW-CARD: 15px 40px 20px var(--SHADOW-COLOR-CARD),
+      -15px 40px 20px var(--SHADOW-COLOR-CARD);
+  }
+}
+
+/* || UTILITY CLASSES */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+/* || GENERAL STYLES */
+html {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  font-weight: 400;
+  background-color: var(--BGCOLOR);
+}
+
+body {
+  color: var(--FONT-COLOR);
+  min-height: 100vh;
+}
+
+/* || MAIN */
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__container {
+  padding: 1em 1.5em;
+}
+
+.card {
+  background-color: var(--BGCOLOR-CARD);
+  padding: 1.5em;
+  border-radius: 15px;
+  max-width: 21.8rem;
+  box-shadow: var(--BOX-SHADOW-CARD);
+}
+
+.card__header {
+  margin-bottom: 0.95em;
+}
+
+.card__wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.card__wrapper:hover::after,
+.card__wrapper:focus-visible::after {
+  opacity: 1;
+}
+
+.card__wrapper:hover .card__view {
+  opacity: 1;
+}
+
+.card__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: var(--BGCOLOR-CARD-WRAPPER-AFTER);
+  opacity: 0;
+}
+
+.card__banner {
+  border-radius: 8px;
+  margin-bottom: 1.35em;
+}
+
+.card__view {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 10;
+  user-select: none;
+}
+
+.card__title {
+  font-size: 1.375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: var(--FONT-COLOR-CARD-TITLE-HOVER);
+}
+
+.card__p {
+  font-weight: 300;
+  line-height: 1.525;
+  margin-bottom: 1em;
+  color: var(--FONT-COLOR-CARD-P);
+}
+
+.card__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.card__value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35em;
+}
+
+.card__price {
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: var(--FONT-COLOR-CARD-PRICE);
+}
+
+.card__time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35em;
+}
+
+.card__days {
+  font-weight: 300;
+  color: var(--FONT-COLOR-CARD-DAYS);
+}
+
+.card__footer {
+  border-top: var(--BORDER-CARD-FOOTER);
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.card__avatar {
+  width: 33px;
+  border-radius: 50%;
+  border: var(--BORDER-CARD-AVATAR);
+}
+
+.card__author {
+  color: var(--FONT-COLOR-CARD-AUTHOR);
+  font-weight: 300;
+  font-size: 0.9625rem;
+}
+
+.card__span {
+  color: var(--FONT-COLOR-CARD-SPAN);
+  cursor: pointer;
+}
+
+.card__span:hover {
+  color: var(--FONT-COLOR-CARD-SPAN-HOVER);
+}
+
+/* || MEDIA QUERY (DEVICE WIDTH) */
+@media screen and (min-width: 48rem) {
+  /* || MAIN */
+  .card {
+    padding: 1.5em 1.5em 2em;
+  }
+
+  .card__header {
+    margin-bottom: 0.95em;
+  }
+
+  .card__banner {
+    margin-bottom: 1.5em;
+  }
+
+  .card__p {
+    margin-bottom: 1.25em;
+    font-size: 1.125rem;
+  }
+
+  .card__info {
+    margin-bottom: 1.5em;
+  }
+
+  .card__price {
+    font-size: 1.025rem;
+  }
+
+  .card__days {
+    font-size: 1.05rem;
+  }
+
+  .card__footer {
+    gap: 1em;
+  }
+
+  .card__author {
+    font-size: 0.9625rem;
+    font-size: 1.025rem;
+  }
+}
+
+/* || MEDIA QUERY (REDUCED MOTION) */
+/* CHANGE THE DATA BELOW AS NEEDED */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body,
+  .card,
+  .card__footer,
+  .card__title,
+  .card__p,
+  .card__price,
+  .card__days,
+  .card__author,
+  .card__span,
+  .card__wrapper::after,
+  .card__view {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    animation: none !important;
+
+    transition-duration: 0.001ms !important;
+    transition-delay: 0.001ms !important;
+    transition: none !important;
+
+    caret-color: auto !important;
+  }
+
+  html {
+    scroll-behavior: auto !important;
+  }
+}

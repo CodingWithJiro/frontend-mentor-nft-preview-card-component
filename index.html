@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Preview Card Component</title>
+    <meta name="author" content="Elmar Chavez" />
+    <meta name="description"
+        content="A responsive NFT preview card component built using HTML and CSS as part of a Frontend Mentor challenge. Created during the author's third month of learning frontend web development." />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+    <meta property="og:site_name" content="CodingWithJiro" />
+    <meta property="og:title" content="NFT Preview Card Component" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="A responsive NFT preview card component built using HTML and CSS as part of a Frontend Mentor challenge." />
+
+    <meta property="og:url" content="ADD_LINK_HERE" />
+
+    <meta property="og:image" content="ADD_LINK_HERE/assets/img/site-preview-meta_1200x630.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NFT Preview Card Component" />
+    <meta name="twitter:description"
+        content="Responsive NFT preview card built with #HTML and #CSS. Completed as part of a #FrontendMentor challenge." />
+
+    <meta name="twitter:image" content="ADD_LINK_HERE/assets/img/site-preview-meta_1200x630.png" />
+
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7fafd" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d192b" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <a class="sr-only" href="#main" aria-label="Skip to main content">
+            Go directly to the main content of the page.
+        </a>
+    </header>
+
+    <main class="main" id="main">
+        <div class="main__container">
+            <article class="card" aria-labelledby="card__title">
+                <header class="card__header">
+                    <div class="card__wrapper">
+                        <img src="./assets/img/image-equilibrium_604x604.jpg" alt="NFT image of Equilibrium #3429."
+                            class="card__banner" width="604" height="604">
+
+                        <img src="./assets/icons/icon-view_48x48.svg" alt="" width="48" height="48" class="card__view"
+                            aria-hidden="true">
+                    </div>
+
+                    <h1 class="card__title" id="card__title">
+                        Equilibrium #3429
+                    </h1>
+                </header>
+
+                <p class="card__p">
+                    Our Equilibrium collection promotes balance and calm.
+                </p>
+
+                <div class="card__info">
+                    <figure class="card__value">
+                        <img src="./assets/icons/icon-ethereum_11x18.svg" alt="" class="card__ethereum" width="11"
+                            height="18" aria-hidden="true">
+
+                        <figcaption class="card__price">
+                            0.041 ETH
+                        </figcaption>
+                    </figure>
+
+                    <figure class="card__time">
+                        <img src="./assets/icons/icon-clock_17x17.svg" alt="" class="card__clock" width="17" height="17"
+                            aria-hidden="true">
+
+                        <figcaption class="card__days">
+                            3 days left
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <footer class="card__footer">
+                    <img src="./assets/img/image-avatar_132x132.png"
+                        alt="Profile picture of the owner of the NFT, Jules Wyvern." class="card__avatar" width="132"
+                        height="132">
+
+                    <p class="card__author">
+                        Creation of <span class="card__span">Jules Wyvern</span>
+                    </p>
+                </footer>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
