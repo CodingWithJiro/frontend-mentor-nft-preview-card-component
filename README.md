@@ -19,6 +19,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c092decb-f8a3-4dbe-a311-00972478a98b/deploy-status)](https://nft-preview-card-component-fm-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
+![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-nft-preview-card-component&left_text=repo%20views)
 
 ## ℹ️ A Responsive Preview Card Component for Equilibrium NFT
 
