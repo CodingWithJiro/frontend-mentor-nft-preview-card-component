@@ -1,4 +1,4 @@
-# 💻 NFT Preview Card Component
+# NFT Preview Card Component
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -21,7 +21,7 @@
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%203-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-nft-preview-card-component&left_text=repo%20views)
 
-## ℹ️ A Responsive Preview Card Component for Equilibrium NFT
+## A Responsive Preview Card Component for Equilibrium NFT
 
 | _Mobile Preview (375x812)_                                   | _Desktop Preview (1440x960)_                                    |
 | ------------------------------------------------------------ | --------------------------------------------------------------- |
@@ -30,11 +30,11 @@
 
 This is a responsive NFT card component that showcases a single collectible with its name, price, remaining availability, and creator profile.
 
-Created as part of the building challenges from [Frontend Mentor](https://www.frontendmentor.io/).
+Created as part of the building challenges from **[Frontend Mentor](https://www.frontendmentor.io/)**.
 
 ---
 
-## 🔍 Overview
+## Overview
 
 The component was crafted using semantic HTML5 and modern CSS, with both **dark and light themes** using the `prefers-color-scheme` media feature.
 
@@ -42,7 +42,7 @@ The project mimics a static design challenge and is fully responsive across mobi
 
 ---
 
-## ✨ Features
+## Features
 
 - Mobile-first responsive layout
 - Semantic and accessible HTML markup
@@ -54,18 +54,18 @@ The project mimics a static design challenge and is fully responsive across mobi
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 - How to build with the `prefers-color-scheme` media feature
 - Structuring CSS using custom variables for easy theming
 - Handling hover effects using pseudo-elements (`::after`)
 - Writing accessible image alt texts and using `aria-hidden` where appropriate
-- Leveraging [PerfectPixel](https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi) to match a design 1:1 with pixel accuracy
+- Leveraging **[PerfectPixel](https://chromewebstore.google.com/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi)** to match a design 1:1 with pixel accuracy
 - Creating smooth transitions that respect users’ motion preferences
 
 ---
 
-## 🛠️ Tech Used
+## Tech Used
 
 - HTML5
 - CSS3
@@ -75,36 +75,36 @@ The project mimics a static design challenge and is fully responsive across mobi
 
 ---
 
-## 🎨 Design Reference & Tools
+## Design Reference & Tools
 
 - JPG design image
 - PerfectPixel
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone the repository
 2. Open `index.html` in your browser
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-Or you can check out the 👉 [live website here](https://nft-preview-card-component-fm-jiro.netlify.app/)
-
----
-
-## 📊 Performance Report
-
-A **Google Lighthouse** audit was conducted on the final version of this project. You can view the full report [here](./assets/downloads/lighthouse-performance-report.pdf).
+Or you can check out the **[live website here](https://nft-preview-card-component-fm-jiro.netlify.app/)**
 
 ---
 
-## 🧑‍💻 Author
+## Performance Report
+
+A **Google Lighthouse** audit was conducted on the final version of this project. You can view the **[full report here](./assets/downloads/lighthouse-performance-report.pdf)**.
+
+---
+
+## Author
 
 Created by **Elmar Chavez**
 
-🗓️ Month/Year: **June 2025**
+Month/Year: **June 2025**
 
-📚 Journey: **3<sup>rd</sup>** month of learning _frontend web development_.
+Journey: **3<sup>rd</sup>** month of learning _frontend web development_.
